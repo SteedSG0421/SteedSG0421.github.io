@@ -1,0 +1,139 @@
+<html>
+<head>
+<title> ENLACES </title>
+
+</head>
+
+<body bgcolor="#76ed6e" text="black">
+<center><h2>ENLACES </h2></center>
+
+<p>La característica que más ha influido en el espectacular éxito del WEB ha sido, aparte la de su
+carácter multimedia, la posibilidad de unir los distintos documentos repartidos por todo el mundo por
+medio de enlaces hipertexto. </p>
+
+<p>En general, los enlaces tienen la siguiente estructura: </p>
+<center><img src="imagen1.jpg"></center>
+
+<p>Donde XXX es el destino del enlace (Obsérvese las comillas). YYY es el texto indicativo en la
+pantalla del enlace (con un color especial y generalmente subrayado)</p>
+
+<h3>Tipos de enlaces </h3>
+<ol>
+<li> Enlaces dentro de la misma página
+<li> Enlaces con otra página nuestra 
+<li> Enlaces con una página fuera de nuestro sistema 
+<li> Enlaces con una dirección de e-mail 	
+</ol>
+
+<ol>
+<h3><li> Enlaces dentro de la misma página </h3>
+
+<p>A veces, en el caso de documentos (o páginas) muy extensos, nos puede interesar dar un salto
+desde una posición a otra determinada. En este caso, lo que antes hemos llamado XXX, es decir, el
+destino del enlace, en este caso el sitio dentro de la página a donde queremos saltar, se sustituye por
+#MARCA (la palabra MARCA puede ser cualquier palabra que queramos). Lo que hemos llamado antes
+YYY es la palabra (o palabras) que aparecerán en la pantalla en color (en forma de hipertexto). Su
+estructura es, entonces: </p>
+<center><img src="pantallazo3.jpg"></center>
+
+<p>Y en el sitio exacto a donde queremos saltar, debemos poner la siguiente etiqueta:</p>
+<center><img src="pantallazo4	.jpg"></center>
+
+<h3><li> Enlaces con otra página nuestra </h3>
+
+<P>Puede ser que tengamos una sola página. Pero lo más frecuente es que tengamos varias páginas,
+una inicial (o principal) y otras conectadas a ella, e incluso entre ellas mismas. </p>
+
+<p>Supongamos que queremos enlazar con la página creada en el ejemplo 2, que la hemos llamado
+mipag2.html. En este caso, simplemente sustituimos lo que hemos llamado XXX (el destino del enlace)
+por el nombre del archivo:</p>
+<center><img src="pantallazo5.jpg"></center>
+
+<p>Si queremos que vaya a un sitio concreto de otra página nuestra en vez de ir al principio de la
+página, adonde va por defecto, en ese sitio tenemos que colocar una marca (ver la Enlaces dentro de la
+misma página), y completar el enlace con la referencia a esa marca. </p>
+
+<p>Lo veremos con el siguiente ejemplo: <A NAME="MIMARCA"></A> es la marca que colocaremos
+en nuestra pagina, que deseamos accesar desde otra nuestra. Entonces la etiqueta tiene que ser: <A
+HREF="mipag2.html#MIMARCA"> En mi otra pagina </A>. </p> 	
+
+<p>Una observación importante: Pudiera ocurrir que nuestro sitio del WEB estuviera organizado con
+un directorio principal, y otros subdirectorios auxiliares. Si la página a la que deseamos accesar está, por
+ejemplo en el subdirectorio misubdir, entonces en la etiqueta tendría que colocarse
+"misubdir/mipag2.html". </p>
+
+<p>Y a la inversa, si quiero saltar desde una página a otra que está en un directorio anterior, en la
+etiqueta tendría que haber puesto "../mipag2.html". Esos dos puntos hace que se dirija al directorio
+anterior. Obsérvese que se debe utilizar el símbolo / para indicar los subdirectorios, y no este otro \, que
+es propio únicamente de Windows. </p>
+
+<p>Si nos queremos evitar todas estas complicaciones, podemos tener todo junto en un único
+directorio, pero esto tiene el inconveniente de que esté todo más desordenado, y sean más difíciles de
+hacer las futuras modificaciones. </p>
+
+<h3><li> Enlaces con una página fuera de nuestro sistema </h3>
+
+<p>Si queremos enlazar con una página que esté fuera de nuestro sistema (es decir, que esté en un
+servidor distinto al que soporta nuestra página), es necesario conocer su dirección completa, o URL
+(Uniform Resource Locator). El URL podría ser, además de la dirección de una página del WEB, una
+dirección de FTP, GOPHER, etc.</p>
+<p>Una vez conocida la dirección (o URL), lo colocamos en vez de lo que hemos llamado
+anteriormente XXX (el destino del enlace). Si queremos enlazar por ejemplo con la página de Netscape
+(cuyo URL es: http://home.netscape.com/), la etiqueta sería: </p>
+<center><img src="pantallazo6.jpg"></center>
+
+<p>Es muy importante copiar estas direcciones correctamente (respetando las mayúsculas y
+minúsculas, pues los servidores UNIX sí las distinguen) </p>
+
+
+<h3><li> Enlaces con una dirección de e-mail </h3>
+
+<p>En este caso, sustituimos lo que se ha llamado antes XXX (el destino del enlace) por mailto:
+seguido de la dirección de e-mail. La estructura de la etiqueta es: </p>
+<center><img src="pantallazo7.jpg"></center>
+
+<p>Hay algunos navegadores que no subrayan el comentario de este tipo de enlace. </p>
+<p>Una manera recomendable y más segura para conocer la dirección e-mail seria poner algo así
+como: </p>
+
+<p>Comentarios a Tom Zambrano en <A HREF="mailto: tzambran@delfos.ucla.edu.ve">
+tzambran@delfos.ucla.edu.ve </A> </p>
+
+<p>Es decir, es conveniente, por la razón dicha anteriormente, poner también en el texto del enlace
+la dirección de e-mail. </p>
+
+<center><h2>EJEMPLO </h2></center>
+<center><img src="pantallazo8.jpg"></center>
+
+<HTML>
+<HEAD>
+<TITLE> Mi pagina del Web - 3 </TITLE>
+</HEAD>
+<BODY>
+<CENTER>
+<H1> Mis paginas favoritas </H1>
+</CENTER>
+<HR> 
+
+<p>Estas son mis paginas favoritas:</p>
+
+<P><A HREF="http://home.netscape.com"> Netscape </A>
+<BR> <A HREF="http://www.microsoft.com"> Microsoft </A>
+<BR> <A HREF="http://www.yahoo.com"> Yahoo! </A>
+</BODY>
+</HTML>
+</ol>
+
+<center><h2><font color="red">PASO A PASO PARA LAS INDICACIONES DE ESTA PG </h2></font></center>
+<center><img src="pantallazo9.jpg"></center>
+<center><img src="pantallazo10.jpg"></center>
+<center><img src="pantallazo11.jpg"></center>
+<center><img src="pantallazo12.jpg"></center>
+
+
+
+
+
+</body>
+
+</html>

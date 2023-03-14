@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>IMAGENES </title>
+</head>
+
+<body bgcolor="#e97272" text="black">	
+
+<center><h2> IMAGENES </h2></center>
+<center><img src="imagen10.jpg"></center>
+
+<p>La etiqueta que nos sirve para incluir imágenes en nuestras páginas del WEB es muy similar a la
+de enlaces a otras páginas, que hemos visto en el capítulo anterior. La única diferencia es que, en lugar
+de indicar al programa navegador el nombre y la localización de un documento de texto HTML para que
+lo cargue, se le indica el nombre y la localización de un archivo que contiene una imagen. </p>
+
+
+<p>La estructura de la etiqueta es: </p>
+<center><img src="pantallazo13.jpg"></center>
+
+<p>Con el comando IMG SRC (image source, fuente de la imagen) se indica que se quiere cargar
+una imagen llamada imagen.gif (o el nombre que tenga). </p>
+
+<p>Dentro de la etiqueta se pueden añadir otros comandos, tal como ALT </p>
+<center><img src="pantallazo14.jpg"></center>
+
+<p>Con el comando ALT se introduce una descripción (una palabra o una frase breve) indicativa de
+la imagen. Este comando, que en principio se puede omitir, es en beneficio de los que accedan a nuestra
+página con un programa navegador en forma de texto como el lynx. Ya que no son capaces de ver la
+imagen, por lo menos pueden hacerse una idea sobre ella. Pero no es sólo por esto. Hay casos, como
+veremos más adelante, en los que se utiliza una imagen como enlace a otra página. Si se omitiera este
+comando, los que utilizan dichos navegadores no podrían de ninguna manera acceder a esas páginas.  </p>
+<p>Con respecto a la localización del archivo de esa imagen, se puede decir aquí lo mismo que en
+el capítulo anterior referente a los enlaces. Si no se indica nada especial, como en el caso que se ha
+expuesto, quiere decir que el archivo imagen.gif está en el mismo directorio que el documento HTML que
+estamos escribiendo. Si no es así, se siguen los mismos criterios que los indicados para los enlaces. </p>
+<p>Las imágenes deben estar guardadas en un formato de archivo especial llamado GIF. (Hay
+también otro formato más avanzado JPG). Este formato GIF almacena las imágenes con un máximo de
+256 colores, en forma comprimida.</p>
+
+
+<p>Un aspecto muy importante a tener en cuenta es el tamaño de las imágenes, pues una imagen
+grande supone un archivo grande, y esto puede resultar en un tiempo excesivo de carga, con el
+consiguiente riesgo de que quien esté intentando cargar nuestra página se canse de esperar, y desista
+de ello. </p>
+<p>Para elegir la posición de la imagen con respecto al texto hay distintas posibilidades. La más
+sencilla es colocarla entre dos párrafos, con un titular a un lado. Los navegadores más actuales (como el
+Netscape Navigator y el Microsoft Internet Explorer) permiten que el texto pueda rodear a la imagen. </p>
+<p>De momento nos vamos a limitar a escoger la posición del titular con respecto a la imagen. Se
+puede poner arriba, en medio o abajo del lado de la imagen. Para ello se añade el comando ALIGN a la
+etiqueta, de la siguiente manera: </p>
+
+<center><img src="pantallazo15.jpg"></center>
+
+<p>Otra posibilidad muy interesante es la de utilizar una imagen como enlace a otra página. Para
+estos casos se utilizan generalmente imágenes pequeñas (iconos), aunque se puede usar cualquier tipo
+de imagen. </p>
+<p>Según vimos en el capítulo anterior, la estructura general de un enlace es: </p>
+
+<center><img src="captura23.jpg"></center>
+
+<p>En este caso sustituimos XXX por el nombre del archivo de la página a la que queremos acceder.
+Y en lugar de YYY ponemos la etiqueta completa de la imagen (que queda así englobada dentro de la
+etiqueta del enlace). </p>
+<p>Como por ejemplo (hombre.gif) para acceder al ejemplo práctico del capítulo 2 (mipag2.html): </p>
+
+<center><img src="captura24.jpg"></center>
+
+<p>Pulsando la imagen comprobamos cómo efectivamente enlaza con la página deseada.
+Obsérvese además que la imagen está rodeada de un rectágulo del color normal en los enlaces. Si no se
+desea que aparezca ese rectángulo, hay que incluir dentro de la etiqueta de la imagen el atributo
+BORDER=0, es decir: </p>
+
+<center><img src="captura25.jpg"></center>
+
+<p> Posicionando el cursor sobre esta última imagen, comprobamos que actúa también como enlace
+aunque carezca del rectángulo de color. Esto puede resultar más estético, pero se corre el riesgo de que
+el usuario no se dé cuenta de que la imagen sirve de enlace. </p>
+<p>También podemos utilizar una imagen para enlazar con otra imagen. Supongamos que queremos
+enlazar con la imagen estaimagen.gif por medio de esta otra imagen desdeesta.gif: </p>
+
+<center><img src="captura26.jpg"></center>
+
+<p>Por ultimo, otra posibilidad es la de utilizar un texto para enlazar con una imagen. En este caso
+sustituimos XXX (el destino del enlace) con el nombre del archivo de la imagen a la que queremos acceder
+e YYY (lo que aparece en pantalla como el enlace) por el texto. </p>
+
+<h4> Por ejemplo: </h4>
+<center><img src="ejemplo1.jpg"></center>
+
+
+<p>Un tipo de imágenes del que se hace abundante uso y que sirven para mejorar la presentación
+de la página son los iconos, botones, barras separadoras, etc. A pesar de su tamaño o forma, son
+imágenes como cualquier otra. </p>
+
+
+<center><h2><font color="red">PASO A PASO PARA LAS INDICACIONES DE ESTA PG </h2></font></center>
+<center><img src="paso1.jpg"></center>
+<center><img src="paso2.jpg"></center>
+<center><img src="paso3.jpg"></center>
+
+</body>
+
+</html>
